@@ -48,13 +48,15 @@ public class Salesforce {
 		Select sel= new Select(driver.findElement(By.name("UserTitle")));
 		sel.selectByVisibleText("IT Manager");
 		
+		
+		
 		Select sel1= new Select(driver.findElement(By.name("CompanyEmployees")));
-		sel1.selectByVisibleText("101-500 employees");
+		sel1.selectByVisibleText("101 - 500 employees");
 		
 		Select sel2= new Select(driver.findElement(By.name("CompanyCountry")));
 		sel2.selectByVisibleText("United Kingdom");
 		
-	driver.findElement(By.partialLinkText("data-input-check")).click();
+	   driver.findElement(By.partialLinkText("data-input-check")).click();
 		
 		
 		

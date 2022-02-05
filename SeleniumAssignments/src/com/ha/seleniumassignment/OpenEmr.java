@@ -65,10 +65,12 @@ public class OpenEmr {
 		
 		
 		Select drop2 = new Select(driver.findElement(By.id("users")));
-		drop2.selectByVisibleText("");
-		
+		//drop2.selectByVisibleText("Jarvis, Fred");
+		drop2.selectByIndex(1);
 		
 		driver.findElement(By.id("newnote")).click();
+		
+		
 	}
 
 }
